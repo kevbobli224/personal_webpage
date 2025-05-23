@@ -5,7 +5,7 @@ const Navbar = forwardRef(({ isOpen, setIsOpen }, ref) => {
         <nav ref={ref} className="bg-gray-800 fixed top-0 left-0 right-0 shadow-md z-50 py-4">
             
             <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div className="text-xl font-semibold">My CV Site</div>
+            <div className="text-xl font-semibold">Kevin Li</div>
                 {/* Desktop menu */}
                 <div className="hidden md:flex space-x-6">
                     <a href="#" className="hover:text-white transition-colors">Home</a>
