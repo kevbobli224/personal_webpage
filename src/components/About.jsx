@@ -36,7 +36,7 @@ const About = () => {
               </li>
             </ul>
             <ul className="flex gap-6 items-center py-4 w-full flex-col">
-            <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3">
                     <div className="relative flex-shrink-0 self-center">
                         <FaUniversity className="text-xl flex-shrink-0 self-center"/>
                         <span className="absolute -bottom-1 -right-1 text-xs font-semibold text-white/80 leading-none tracking-tight">
