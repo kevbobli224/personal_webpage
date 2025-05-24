@@ -4,7 +4,7 @@ import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { Intro } from "./components/MainContent/Intro.jsx";
 import { Pubs } from "./components/MainContent/Publication.jsx";
-
+import { Oth } from "./components/MainContent/Others.jsx";
 function App() {
   const navRef = useRef(null);
   const [navHeight, setNavHeight] = useState(0);
@@ -28,6 +28,8 @@ function App() {
           <section className="w-full md:w-5/6 bg-gray-900 p-4 px-24">
             <Intro></Intro>
             <Pubs></Pubs>
+            <Oth></Oth>
+            <p>yesa</p>
           </section>
         </div>
       </main>

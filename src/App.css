@@ -5,6 +5,9 @@
   padding: 0;
   text-align: center;
 }
+.custom-tooltip {
+  padding: 0px 10px;
+}
 
 .main-section {
   padding: 1rem;
