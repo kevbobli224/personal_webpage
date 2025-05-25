@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaOrcid, FaTwitter, FaUniversity } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaOrcid, FaUniversity, FaDownload} from "react-icons/fa";
 const About = () => {
     return (
         <aside className='w-full md:w-1/6 bg-gray-800 p-4'>
@@ -81,6 +81,14 @@ const About = () => {
                     </div>
                 </li>
             </ul>
+            <a
+                href="/cv/LiKevin_CV.pdf"
+                download
+                className="inline-flex mt-6 px-4 py-2 bg-gray-700 hover:bg-gray-400 text-white font-semibold rounded shadow transition"
+            >
+                <FaDownload  className="text-base align-middle translate-y-[4px]"/>
+                Download CV
+            </a>
         </aside>
     )
 };

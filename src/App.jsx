@@ -5,9 +5,18 @@ import { About } from "./components/About";
 import { Intro } from "./components/MainContent/Intro.jsx";
 import { Pubs } from "./components/MainContent/Publication.jsx";
 import { Oth } from "./components/MainContent/Others.jsx";
+import { FaArrowUp } from "react-icons/fa";
+
 function App() {
   const navRef = useRef(null);
   const [navHeight, setNavHeight] = useState(0);
+
+  const handleClick = () => {
+    const introSection = document.getElementById("intro");
+    if (introSection) {
+      introSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     if (navRef.current) {
@@ -29,11 +38,22 @@ function App() {
             <Intro></Intro>
             <Pubs></Pubs>
             <Oth></Oth>
-            <p>yesa</p>
+            <footer className="w-full bg-gray-900 text-gray-600 text-center py-4 mt-8">
+              © 2025 Kevin Li
+            </footer>
           </section>
         </div>
       </main>
+      <button
+        onClick={handleClick}
+        className="fixed bottom-6 right-6 z-50 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg transition"
+        aria-label="Scroll to top"
+        title="Go to Introduction"
+      >
+        <FaArrowUp className="text-xl" />
+      </button>
     </div>
+    
   );
 }
 
