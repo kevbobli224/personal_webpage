@@ -4,7 +4,7 @@ const About = () => {
         <aside className='w-full md:w-1/6 bg-gray-800 p-4'>
             <h1 className='text-2xl font-bold mb-2'>About Me</h1>
             <img
-                src="/static/am.png"
+                src={`${import.meta.env.BASE_URL}static/am.png`}
                 alt="This me"
                 className="rounded-lg shadow-lg border border-gray-700 mx-auto"
             />
@@ -82,7 +82,7 @@ const About = () => {
                 </li>
             </ul>
             <a
-                href="/cv/LiKevin_CV.pdf"
+                href={`${import.meta.env.BASE_URL}cv/LiKevin_CV.pdf`}
                 download
                 className="inline-flex mt-6 px-4 py-2 bg-gray-700 hover:bg-gray-400 text-white font-semibold rounded shadow transition"
             >
