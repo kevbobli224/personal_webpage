@@ -10,7 +10,7 @@ import { FaArrowUp } from "react-icons/fa";
 function App() {
   const navRef = useRef(null);
   const [navHeight, setNavHeight] = useState(0);
-
+  const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
     const introSection = document.getElementById("intro");
     if (introSection) {
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-800 text-gray-100">
-      <Navbar ref={navRef}/>
+      <Navbar ref={navRef} isOpen={isOpen} setIsOpen={setIsOpen}/>
 
       <main className="" style={{ paddingTop: `${navHeight}px` }}>
         <div className='flex flex-col md:flex-row w-full min-h-screen bg-gray-800'>

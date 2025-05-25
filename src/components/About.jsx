@@ -9,11 +9,12 @@ const About = () => {
                 className="rounded-lg shadow-lg border border-gray-700 mx-auto"
             />
             <p className='text-xl text-gray-200'>Li, Kevin</p>
-            <ul className="flex gap-6 items-center justify-center py-4"> 
-              <li className="flex items-center space-x-2 hover:text-white">
+            <ul className="flex gap-6 items-center justify-center py-4  "> 
+              <li className="flex space-x-2 hover:text-white">
                 <a 
                     href="https://github.com/kevbobli224"
                     className="text-white hover:text-grey transition-colors"
+                    target="_blank"
                 >
                     <FaGithub className="text-xl" />
                 </a>
@@ -22,6 +23,7 @@ const About = () => {
                 <a 
                     href="https://linkedin.com/in/kevin-kw-li"
                     className="text-white hover:text-grey transition-colors"
+                    target="_blank"
                 >
                     <FaLinkedin className="text-xl" />
                 </a>
@@ -30,13 +32,14 @@ const About = () => {
                 <a 
                     href="https://orcid.org/0009-0001-1063-7983"
                     className="text-white hover:text-grey transition-colors"
+                    target="_blank"
                 >
                     <FaOrcid className="text-xl" />
                 </a>
               </li>
             </ul>
-            <ul className="flex gap-6 items-center py-4 w-full flex-col">
-                <li className="flex items-start gap-3">
+            <ul className="flex gap-6 py-4 w-full flex-col items-center md:items-start ">
+                <li className="flex md:items-start md:flex-row gap-3">
                     <div className="relative flex-shrink-0 self-center">
                         <FaUniversity className="text-xl flex-shrink-0 self-center"/>
                         <span className="absolute -bottom-1 -right-1 text-xs font-semibold text-white/80 leading-none tracking-tight">
@@ -56,7 +59,7 @@ const About = () => {
                         </div>
                     </div>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex md:items-start md:flex-row gap-3">
                     <div className="relative flex-shrink-0 self-center">
                         <FaUniversity className="text-xl flex-shrink-0 self-center"/>
                         <span className="absolute -bottom-1 -right-1 text-xs font-semibold text-white/80 leading-none tracking-tight">

@@ -21,16 +21,12 @@ const Navbar = forwardRef(({ isOpen, setIsOpen }, ref) => {
             }
           }
         };
-      
         window.addEventListener("scroll", handleScroll);
         handleScroll();
-      
         return () => window.removeEventListener("scroll", handleScroll);
       }, []);
-
     return (
         <nav ref={ref} className="bg-gray-800 fixed top-0 left-0 right-0 shadow-md z-50 py-4">
-            
             <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div className="text-xl font-semibold">Kevin Li</div>
                 {/* Desktop menu */}
@@ -57,7 +53,6 @@ const Navbar = forwardRef(({ isOpen, setIsOpen }, ref) => {
                     </button>
                 </div>
             </div>
-
             {/* Mobile dropdown menu */}
             {isOpen && (
                 <div className="md:hidden bg-gray-800 px-4 pt-2 pb-4 space-y-2 shadow-md">
@@ -75,7 +70,6 @@ const Navbar = forwardRef(({ isOpen, setIsOpen }, ref) => {
                     ))}
                 </div>
             )}
-            
         </nav>
     )
 });

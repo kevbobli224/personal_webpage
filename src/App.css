@@ -60,3 +60,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.nt {
+  target: "_blank";
+}
